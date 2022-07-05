@@ -1,0 +1,24 @@
+.login {
+  margin-top: 5em;
+}
+.left-content {
+  margin-top: 10em;
+}
+.descr {
+  margin-top: 3em;
+  font-weight: 500;
+}
+.left {
+  background-color: #4361ee;
+  color: #fff;
+  height: 100vh;
+}
+
+.span-sign {
+  color: #4361ee;
+}
+
+.form-control:focus {
+  outine: none;
+  box-shadow: none;
+}

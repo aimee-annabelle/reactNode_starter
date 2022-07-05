@@ -1,0 +1,27 @@
+.container-fluid {
+  width: 100%;
+}
+.left-content {
+  margin-top: 10em;
+}
+.btn {
+  margin-top: 3em;
+  width: 350px;
+  left: 108px;
+  top: 825px;
+  background: #4361ee;
+  border-radius: 8px;
+}
+.btn:hover {
+  background: #4361ee;
+  color: #fff;
+  /* opacity: 12; */
+}
+.img-fluid {
+  width: 80%;
+  height: 80%;
+  margin-top: 3em;
+}
+.descr {
+  margin-top: 3em;
+}

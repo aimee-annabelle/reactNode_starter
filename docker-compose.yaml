@@ -1,0 +1,29 @@
+version: '3.8'
+
+
+services:
+  backend: 
+    image: "bestverie/node-backend:latest"
+    ports:
+      - "5001:5001"
+    build: 
+       context: ./node-starter
+       dockerfile: Dockerfile
+  frontend: 
+    image: "bsestverie/react-frontend:latest"
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    build: 
+       context: ./react-starter
+       dockerfile: Dockerfile
+  mongodb:
+    image: mongo:5.0
+    ports:
+      - 27018:27017
+    volumes:
+      - ~/apps/mongo:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin 
